@@ -1,7 +1,8 @@
 
-NOT_CRAN <- identical(tolower(Sys.getenv("NOT_CRAN")), "true")
+# Note: explicitly set environment variable NOT_CRAN to "true" (e.g. on command line) to run skipped tests
 
-if (NOT_CRAN) {
+if(identical(tolower(Sys.getenv("NOT_CRAN")), "true")) {
+
   dir_nifti1 <- "~/Dropbox/Documents/Radiogenomics/radiogenomics_r_package/sample_data/images/nifti-1/"
   dir_nifti2 <- "~/Dropbox/Documents/Radiogenomics/radiogenomics_r_package/sample_data/images/nifti-2/"
 
