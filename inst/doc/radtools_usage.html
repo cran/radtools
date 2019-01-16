@@ -12,7 +12,7 @@
 
 <meta name="author" content="Pamela Russell" />
 
-<meta name="date" content="2019-01-15" />
+<meta name="date" content="2019-01-16" />
 
 <title>Package usage: radtools</title>
 
@@ -300,7 +300,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">Package usage: radtools</h1>
 <h4 class="author"><em>Pamela Russell</em></h4>
-<h4 class="date"><em>2019-01-15</em></h4>
+<h4 class="date"><em>2019-01-16</em></h4>
 
 
 
@@ -312,8 +312,8 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <h1>Image file formats</h1>
 <div id="dicom" class="section level2">
 <h2>DICOM</h2>
-<p>DICOM (Digital Imaging and Communication in Medicine) is a standard for management of medical images and image metadata. The <a href="https://www.dicomstandard.org/current/">DICOM standard</a> specifies a file format definition. Each DICOM file includes image pixel data and embedded metadata. Our package assumes each DICOM file contains one two-dimensional image slice.</p>
-<p>DICOM metadata is embedded in each file and allows image series to be reconstructed from multiple files via shared metadata identifying the patient, etc. DICOM files can be analyzed individually as single slices, or a directory containing an entire image series can be analyzed as one three-dimensional image.</p>
+<p>DICOM (Digital Imaging and Communication in Medicine) is a standard for management of medical images and image metadata. The <a href="https://www.dicomstandard.org/current/">DICOM standard</a> specifies a file format definition. Each DICOM file includes optional pixel data and embedded metadata. Typically, each DICOM file contains one two-dimensional image slice. Radtools also supports DICOM files that do not contain pixel data.</p>
+<p>DICOM metadata is embedded in each file and allows image series to be reconstructed from multiple files via shared metadata identifying the patient, etc. DICOM files can be analyzed individually, or a directory containing an entire image series can be analyzed as one three-dimensional image.</p>
 </div>
 <div id="nifti" class="section level2">
 <h2>NIfTI</h2>
@@ -698,7 +698,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <a class="sourceLine" id="cb24-14" data-line-number="14"><span class="co">#&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     </span></a>
 <a class="sourceLine" id="cb24-15" data-line-number="15"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb24-16" data-line-number="16"><span class="co">#&gt; other attached packages:</span></a>
-<a class="sourceLine" id="cb24-17" data-line-number="17"><span class="co">#&gt; [1] bindrcpp_0.2.2 radtools_1.0.2 knitr_1.21    </span></a>
+<a class="sourceLine" id="cb24-17" data-line-number="17"><span class="co">#&gt; [1] bindrcpp_0.2.2 radtools_1.0.3 knitr_1.21    </span></a>
 <a class="sourceLine" id="cb24-18" data-line-number="18"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb24-19" data-line-number="19"><span class="co">#&gt; loaded via a namespace (and not attached):</span></a>
 <a class="sourceLine" id="cb24-20" data-line-number="20"><span class="co">#&gt;  [1] tidyselect_0.2.5    xfun_0.4            purrr_0.2.5        </span></a>

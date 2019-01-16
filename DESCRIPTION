@@ -1,6 +1,6 @@
 Package: radtools
-Title: Utilities for Smooth Navigation of Medical Image Data
-Version: 1.0.2
+Title: Utilities for Convenient Extraction of Medical Image Metadata
+Version: 1.0.3
 Author: Pamela Russell [aut, cre]
 Maintainer: Pamela Russell <pamela.russell@ucdenver.edu>
 Authors@R: person("Pamela", "Russell", email = "pamela.russell@ucdenver.edu", role = c("aut", "cre"))
@@ -19,6 +19,6 @@ Suggests: testthat, covr, knitr, rmarkdown, rvest, hashmap, stringr,
         xml2
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-01-15 23:31:44 UTC; Pamela
+Packaged: 2019-01-16 16:19:40 UTC; Pamela
 Repository: CRAN
-Date/Publication: 2019-01-15 23:50:03 UTC
+Date/Publication: 2019-01-16 18:40:03 UTC
