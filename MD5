@@ -1,7 +1,7 @@
-367acc538b126a8d41094559b4008645 *DESCRIPTION
+e4f7fc480ec037a5552e2492ab33b8bd *DESCRIPTION
 06aae2f4e1cd3252bfb454cf5dad7b8a *LICENSE
 0b20fe6138c55efbe1e434fd113a7bcc *NAMESPACE
-e66418ff8403a8c547e966cd2e43293f *NEWS.md
+9926b9b3b091af8972ef8145ef34c73f *NEWS.md
 e7150aaddd823cd3163a3fbe3ea73e2f *R/data.R
 4a17f517ac7fd766265f3bec31b604ff *R/image_import.R
 ed5d342d5e66243935024e96eb3556c6 *R/metadata.R
@@ -15,10 +15,10 @@ e801166f084e19b33b886ca27319a555 *README.md
 5c7d0100bb88fac23f9867b50df87c19 *data/sample_nifti_img.rda
 eeb5e67a9ecfeaae47b623b5d0da7b6c *inst/doc/oro_compare.R
 bc4c6c782d4c2ac65583b8633536894d *inst/doc/oro_compare.Rmd
-2cedb6bf6bb02185fa288a399917fce2 *inst/doc/oro_compare.html
+90bfc3410852aeae8471d7be1fe6de8e *inst/doc/oro_compare.html
 330e96e7c794b560c4e1191ad91ee1bb *inst/doc/radtools_usage.R
 a2e55ca7b7dceb480dc6c13ca56aaf81 *inst/doc/radtools_usage.Rmd
-97e294ee5d8b2799696cb9caf8eb3bdb *inst/doc/radtools_usage.html
+c17dfd11638bd483dea31e8cffc78cf5 *inst/doc/radtools_usage.html
 8c37e80e0660d96532af052b5abbd524 *man/dicom_all_valid_header_keywords.Rd
 c46333bf0ce58bab61c6c736b0f7528c *man/dicom_all_valid_header_names.Rd
 08e4fb362787846cb5c7727aec4100f8 *man/dicom_all_valid_header_tags.Rd
@@ -59,11 +59,11 @@ f7e71de5ae132656773a66dc6a5f6f63 *man/validate_metadata.Rd
 b880e3cc7a25ad404d50b36fb5b53dbd *man/view_slice.Rd
 be3e6ab91c6f510f9fec0d0ee7dfeb0d *man/view_slice_mat.Rd
 69c491b3dc0e1475080362057e6435d6 *tests/testthat.R
-344fb73a6328e6b6ede2623f692f3e60 *tests/testthat/setup-dicomdata.R
+534795d8b613c67146b67fb70eaf22b5 *tests/testthat/setup-dicomdata.R
 6d52b6baf83f307a15f219eebb9f4a44 *tests/testthat/setup-niftidata.R
 15b80b35466bae3a5e892d68bcf5d246 *tests/testthat/test_image_import_dicom.R
-95caed290faf03133311ebbb08de44e0 *tests/testthat/test_image_import_nifti.R
-771666b60548ac05d3af32bf600eadeb *tests/testthat/test_metadata_dicom.R
+2def461bbce2936ef5ad229de5693916 *tests/testthat/test_image_import_nifti.R
+9c39e76ac6897341016fa8ca394dedf3 *tests/testthat/test_metadata_dicom.R
 d86402e46f1deaa014799bcfcd539ed8 *tests/testthat/test_metadata_nifti.R
 f43f3f5ecf426c7dc9bb5174793b5440 *tests/testthat/test_view.R
 bc4c6c782d4c2ac65583b8633536894d *vignettes/oro_compare.Rmd
