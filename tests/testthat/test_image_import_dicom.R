@@ -2,14 +2,14 @@
 # Note: explicitly set environment variable NOT_CRAN to "true" (e.g. on command line) to run skipped tests
 
 test_that("DICOM image data to 3D matrix - for CRAN", {
-  expect_equal(dim(img_data_to_3D_mat(sample_dicom_img)), c(256, 256, 3))
-  expect_error(img_data_to_3D_mat(sample_dicom_img, coord_extra_dim = 1))
-  expect_equal(dim(img_data_to_3D_mat(sample_dicom_img)), c(256, 256, 3))
-  expect_error(img_data_to_3D_mat(sample_dicom_img, coord_extra_dim = 1))
+  expression_try(sample_dicom_img, expect_equal(dim(img_data_to_3D_mat(sample_dicom_img)), c(256, 256, 3)))
+  expression_try(sample_dicom_img, expect_error(img_data_to_3D_mat(sample_dicom_img, coord_extra_dim = 1)))
+  expression_try(sample_dicom_img, expect_equal(dim(img_data_to_3D_mat(sample_dicom_img)), c(256, 256, 3)))
+  expression_try(sample_dicom_img, expect_error(img_data_to_3D_mat(sample_dicom_img, coord_extra_dim = 1)))
 })
 
 test_that("DICOM image data to matrix - for CRAN", {
-  expect_equal(dim(img_data_to_mat(sample_dicom_img)), c(256, 256, 3))
+  expression_try(sample_dicom_img, expect_equal(dim(img_data_to_mat(sample_dicom_img)), c(256, 256, 3)))
 })
 
 test_that("Matrix reduce dimensions", {
@@ -83,6 +83,8 @@ test_that("DICOM import - for CRAN", {
 test_that("DICOM import - skip on CRAN", {
 
   skip_on_cran()
+  testthat::skip_on_travis()
+  testthat::skip_on_appveyor()
 
   # No slices
   expect_error(img_data_to_3D_mat(dicom_data_qin_hn_sr))
